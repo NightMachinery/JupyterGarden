@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "jupytergarden"
+version = "0.1.0"
+description = "An HTTP REST API to run code in Jupyter kernels, for languages with expensive startup costs."
+authors = ["NightMachinary <rudiwillalwaysloveyou@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+fastapi = "^0.68.1"
+tornado = "^6.1"
+brish = "^0.3.3"
+icecream = "^2.1.1"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+jupytergarden = 'jupytergarden:main'
+
+[build-system]
+requires = ["setuptools", "poetry_core>=1.0"]
+build-backend = "poetry.core.masonry.api"

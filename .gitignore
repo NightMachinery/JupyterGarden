@@ -1,0 +1,5 @@
+/client.py
+jupytergarden.egg-info
+dist/
+.mypy_cache/
+setup.py
