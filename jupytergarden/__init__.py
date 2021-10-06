@@ -2,7 +2,7 @@ import sys
 import os
 import uvicorn
 from uvicorn.config import LOGGING_CONFIG
-from pynight import logging_config_setup
+from pynight.common_uvicorn import logging_config_setup
 
 try:
     from IPython import embed

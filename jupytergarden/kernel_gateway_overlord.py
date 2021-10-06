@@ -140,9 +140,9 @@ async def kernel_ws_eval(ws, code, session='', close_after=True, isDbg=False, lo
                     text = msg['content']['text']
                     stream_name = msg['content']['name']
                     if stream_name == 'stdout':
-                        stdout = text
+                        stdout += text
                     elif stream_name == 'stderr':
-                        stderr = text
+                        stderr += text
                 elif msg_type == 'execute_reply':
                     status = msg['content']['status']
                     if status == 'ok':
